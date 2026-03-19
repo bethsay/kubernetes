@@ -77,13 +77,13 @@ Check firewalld status, SELinux status. Ports 6443, 2379, 2380, 10250-10260, 320
 For Ubuntu
     #apt update
     #apt install -y apt-transport-https ca-certificates curl gpg
-    #curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
-    #echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+    #curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.35/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+    #echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.35/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
     #apt update
     #apt-cache policy kubelet kubeadm kubectl
     #apt install -y kubelet kubeadm kubectl
         ->Install the latest version. To install an older version, use below command
-        #apt install -y kubelet=1.33.0-1.1 kubeadm=1.33.0-1.1 kubectl=1.33.0-1.1
+        #apt install -y kubelet=1.35.0-1.1 kubeadm=1.35.0-1.1 kubectl=1.35.0-1.1
     #apt-mark hold kubelet kubeadm kubectl
         ->To prevent unscheduled upgrades of the packages kubelet, kubeadm and kubectl
 For RHEL
