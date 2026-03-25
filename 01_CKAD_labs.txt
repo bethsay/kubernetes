@@ -500,6 +500,7 @@ Below commands will help when you are developing a helm chart.
         ->Create a helmfile.yaml(not within any project or chart). List one or more charts that you need to install.
         ->Install helm-git as a helm plugin to use git repos as helm repos
 
+---Pending: This project has been retired. Port the below block to HeadLamp https://headlamp.dev/docs/latest/installation/in-cluster/---
 Kubernetes Dashboard
 This a gui to interact with kubernetes api-server
 Kubernetes Dashboard allows you to manage your cluster from a webpage.
